@@ -1,0 +1,15 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Taşınabilir Mini Blender | Örnek Mağaza</title><link rel="stylesheet" href="stil.css"></head><body>
+<header><div class="logo">Örnek Mağaza</div><a class="sepet-link" href="sepet.html">Sepetim (<span id="adet">0</span>)</a></header>
+<main><img class="gorsel" src="urun.svg" alt="Mini blender"><h1>Taşınabilir Mini Blender En İyi Kalite Süper Güçlü</h1><div class="fiyat">899,00 TL</div>
+<button class="dugme" id="ekle">Sepete Ekle</button>
+<div class="sekmeler"><button class="sekme acik" data-p="p1">Ürün Açıklaması</button><button class="sekme" data-p="p2">Yorumlar</button></div>
+<div id="p1" class="panel acik">Harika bir blender. Her yere götürebilirsiniz. Çok güçlüdür ve çok kalitelidir.</div>
+<div id="p2" class="panel">Bu ürün için henüz yorum yapılmamış.</div></main>
+<footer>Bu mağaza gerçek değildir. Ürün Test Ajanı denemesi için hazırlanmıştır.</footer>
+<div class="cerez" id="cerez">Sitemiz çerez kullanır.<br><button id="red">Reddet</button><button id="kabul">Kabul Et</button></div>
+<script>
+const a=()=>+localStorage.getItem('adet')||0, y=()=>document.getElementById('adet').textContent=a(); y();
+document.getElementById('ekle').onclick=()=>{localStorage.setItem('adet',a()+1);y();const d=document.createElement('div');d.className='not';d.textContent='Ürün sepete eklendi.';document.querySelector('main').prepend(d)};
+document.querySelectorAll('.sekme').forEach(b=>b.onclick=()=>{document.querySelectorAll('.sekme,.panel').forEach(e=>e.classList.remove('acik'));b.classList.add('acik');document.getElementById(b.dataset.p).classList.add('acik')});
+['red','kabul'].forEach(i=>document.getElementById(i).onclick=()=>document.getElementById('cerez').remove());
+</script></body></html>

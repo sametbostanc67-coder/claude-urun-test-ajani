@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node arac/gezgin.mjs *)",
+      "Bash(node arac/rapor.mjs *)",
+      "Bash(node arac/kontrol.mjs)",
+      "PowerShell(node arac/gezgin.mjs *)",
+      "PowerShell(node arac/rapor.mjs *)",
+      "PowerShell(node arac/kontrol.mjs)",
+      "Edit(/raporlar/**)",
+      "Edit(/bilgi/ogrenilenler.md)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)"
+    ]
+  }
+}

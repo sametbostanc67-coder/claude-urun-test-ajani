@@ -1,0 +1,7 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sepetim | Örnek Mağaza</title><link rel="stylesheet" href="stil.css"></head><body>
+<header><div class="logo">Örnek Mağaza</div><a class="sepet-link" href="index.html">Ürüne dön</a></header>
+<main><h1>Sepetim</h1><div id="icerik"></div></main><footer>Bu mağaza gerçek değildir.</footer>
+<script>
+const n=+localStorage.getItem('adet')||0, k=document.getElementById('icerik'), tl=v=>v.toFixed(2).replace('.',',')+' TL';
+k.innerHTML=n?`<div class="satir"><span>Taşınabilir Mini Blender x ${n}</span><span>${tl(899*n)}</span></div><div class="satir"><span>Kargo ücreti</span><span>119,90 TL</span></div><div class="satir"><span>Hizmet bedeli</span><span>29,90 TL</span></div><div class="satir toplam"><span>Toplam</span><span>${tl(899*n+149.8)}</span></div><br><a class="dugme" href="odeme.html">Ödemeye Geç</a>`:'Sepetiniz boş.';
+</script></body></html>

@@ -1,0 +1,14 @@
+{
+  "name": "urun-test-ajani",
+  "version": "1.0.0",
+  "description": "Sitene müşteri gibi giren, sepete kadar giden ve müşterinin neden kaçtığını yazan Claude ajanı.",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "kontrol": "node arac/kontrol.mjs"
+  },
+  "dependencies": {
+    "playwright-core": "^1.50.0"
+  }
+}

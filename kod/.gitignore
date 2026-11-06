@@ -1,0 +1,3 @@
+node_modules/
+raporlar/*
+!raporlar/.gitkeep

@@ -1,0 +1,90 @@
+{
+  "ilan": { "ad": "Taşınabilir Mini Blender (Örnek Mağaza)", "fiyat": "899,00 TL" },
+  "tek_cumle": "5 müşteriden hiçbiri almadı. En çok güven adımında ve sepette kaçıldı.",
+  "musteriler": [
+    {
+      "ad": "Bütçeli anne",
+      "karar": "ALMAM",
+      "kactigi_yer": "Sepet",
+      "soz": "899 lira diye girdim, 1.048 lira çıktı. Bu 150 lira nereden geldi?",
+      "neden": "Ürün sayfasında kargo yazmıyor. Sepette 119,90 TL kargo ve 29,90 TL hizmet bedeli ilk kez çıkıyor."
+    },
+    {
+      "ad": "Teknoloji meraklısı",
+      "karar": "ALMAM",
+      "kactigi_yer": "Ürün bilgisi",
+      "soz": "Süper güçlü diyor ama kaç watt yazmıyor. Bu iddiaya inanmam.",
+      "neden": "Başlıkta \"En İyi Kalite Süper Güçlü\" yazıyor. Açıklamada watt, kapasite ya da şarj süresi yok."
+    },
+    {
+      "ad": "Şüpheci alıcı",
+      "karar": "ALMAM",
+      "kactigi_yer": "Güven",
+      "soz": "Tek yorum yok, satıcı kim belli değil. Paramı kime gönderiyorum?",
+      "neden": "Yorumlar sekmesinde yorum yok. İade, firma ve iletişim bilgisi sayfada görünmüyor."
+    },
+    {
+      "ad": "Hediye arayan",
+      "karar": "TEREDDÜT",
+      "kactigi_yer": "Güven",
+      "soz": "Fena durmuyor ama ne zaman gelir, değişim var mı bilmiyorum.",
+      "neden": "Kargo süresi, kutu görseli ve değişim koşulu sayfada yok."
+    },
+    {
+      "ad": "Acemi alıcı",
+      "karar": "ALMAM",
+      "kactigi_yer": "Ödeme kapısı",
+      "soz": "Bir blender için kimlik numaramı mı vereceğim? Vazgeçtim.",
+      "neden": "Ödeme kapısında üyelik zorunlu. Altı zorunlu alan var, T.C. kimlik no isteniyor, üyeliksiz seçenek görünmüyor."
+    }
+  ],
+  "kacis_haritasi": [
+    { "adim": "İlk ekran", "kalan": 5, "neden": "Görsel, fiyat ve Sepete Ekle düğmesi kaydırmadan görünüyor." },
+    { "adim": "Ürün bilgisi", "kalan": 4, "neden": "Teknik değer yok, başlıktaki iddia kanıtsız." },
+    { "adim": "Güven", "kalan": 2, "neden": "Yorum, iade, kargo süresi ve firma bilgisi yok." },
+    { "adim": "Sepete ekleme", "kalan": 2, "neden": "Düğme çalışıyor, ürünün eklendiği söyleniyor." },
+    { "adim": "Sepet", "kalan": 1, "neden": "Toplam tutar 149,80 TL artıyor." },
+    { "adim": "Ödeme kapısı", "kalan": 0, "neden": "Üyelik zorunlu ve T.C. kimlik no isteniyor." }
+  ],
+  "sepet_neden_birakildi": "Sepete gelen müşteri ürünü 899,00 TL sanıyordu. Sepette toplam 1.048,80 TL oldu. Ek ücretlerin ilk kez burada görünmesi, müşteriye fiyat artışı gibi geldi.",
+  "sorunlar": [
+    {
+      "baslik": "Sayfada güven bilgisi yok",
+      "nerede": "Ürün sayfası",
+      "kanit": "Yorumlar sekmesinde \"henüz yorum yapılmamış\" yazıyor. İade, kargo süresi ve iletişim bilgisi sayfada görünmüyor.",
+      "gorsel": "ekran/04-sekmeler.jpg",
+      "duzeltme": "Fiyatın altına kargo süresi, iade koşulu ve iletişim bilgisini üç kısa satırla ekle.",
+      "hazir_metin": "Kargo: [kaç iş günü] içinde kargoda\nİade: [kaç gün] içinde koşulsuz iade\nDestek: [telefon ya da WhatsApp]"
+    },
+    {
+      "baslik": "Ek ücretler ilk kez sepette çıkıyor",
+      "nerede": "Sepet",
+      "kanit": "Ürün 899,00 TL görünüyor. Sepette 119,90 TL kargo ve 29,90 TL hizmet bedeli ekleniyor, toplam 1.048,80 TL oluyor.",
+      "gorsel": "ekran/06-sepet.jpg",
+      "duzeltme": "Kargo ücretini ürün sayfasında fiyatın yanına yaz. Hizmet bedeli zorunlu değilse kaldır."
+    },
+    {
+      "baslik": "Sipariş için üyelik ve kimlik numarası isteniyor",
+      "nerede": "Ödeme kapısı",
+      "kanit": "Altı zorunlu alan var, şifre ve T.C. kimlik no isteniyor. Üyeliksiz alışveriş seçeneği görünmüyor.",
+      "gorsel": "ekran/07-odeme-kapisi.jpg",
+      "duzeltme": "Üyeliksiz alışverişi aç. T.C. kimlik no alanı zorunlu değilse kaldır."
+    },
+    {
+      "baslik": "Başlık kanıtsız iddia taşıyor",
+      "nerede": "İlk ekran",
+      "kanit": "Başlıkta \"En İyi Kalite Süper Güçlü\" yazıyor. Açıklama üç kısa cümle, teknik değer yok.",
+      "gorsel": "ekran/02-pencere-kapandi.jpg",
+      "duzeltme": "Başlıktan övgüyü çıkar, ürünün ne yaptığını yaz. Açıklamaya gerçek ölçüleri ekle.",
+      "hazir_metin": "Taşınabilir Mini Blender | [kapasite] ml, Şarjlı, [kaç] Bıçaklı"
+    }
+  ],
+  "iyi_olanlar": [
+    "Görsel, fiyat ve Sepete Ekle düğmesi kaydırmadan görünüyor.",
+    "Sepete ekleyince müşteriye bilgi veriliyor."
+  ],
+  "okunamayanlar": [
+    "Ödeme kapısından sonrası görülmedi. Ajan burada durur.",
+    "Örnek Mağaza gerçek bir mağaza değildir, bu rapor kurulum denemesidir."
+  ]
+}

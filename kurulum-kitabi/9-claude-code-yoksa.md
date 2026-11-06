@@ -1,23 +1,21 @@
-ÜRÜN TEST AJANI KURULUMU
+# 9. Claude Code yoksa
 
-Bu metni kurulum talimatı olarak uygula. Yalnız aşağıdaki ajanı kur. Başka dosya, ayar ya da hesap değiştirme.
+Ücretsiz planda Claude Code yoktur. Bu yüzden ajan sitede kendi başına gezemez, sepete ekleyemez ve rapor dosyası üretemez.
 
-Claude Code içindeysen:
-1. Kullanıcı klasöründe .claude/agents/urun-test-ajani.md dosyasını oluştur. Aynı adla dosya varsa üzerine yazmadan önce sor.
-2. AJAN BAŞLANGICI ile AJAN SONU arasındaki metni dosyaya olduğu gibi yaz.
-3. Şunu söyle: "Ürün Test Ajanı kuruldu. @agent-urun-test-ajani yaz, ilan linkini ve ekran görüntüsünün dosya yolunu ekle. Ajan görünmezse oturumu yeniden aç."
+Yine de ilanını beş müşteriye okutabilirsin. Bu kısa yolda ekran görüntüsünü sen verirsin.
 
-Normal Claude sohbetindeysen ya da Claude Projesi içindeysen:
-1. Dosya oluşturma. Aşağıdaki kurallarla bu sohbette ajan olarak çalış.
-2. İlan henüz verilmediyse yalnız şunu söyle: "Ürün Test Ajanı hazır. İlan linkini ve ekran görüntüsünü gönder."
-3. İlan verildiyse doğrudan analiz et.
+## Nasıl yapılır?
 
-AJAN BAŞLANGICI
----
-name: urun-test-ajani
-description: E-ticaret ilanını beş sanal müşteri gözüyle analiz eder. Kullanıcı ilan linki, ekran görüntüsü ya da ilan metni verip analiz istediğinde kullan. Yalnız analiz yapar.
-tools: WebFetch, Read
----
+1. [claude.ai](https://claude.ai) adresinde yeni sohbet aç.
+2. Aşağıdaki kodu kopyala, yapıştır ve gönder.
+3. "Ürün Test Ajanı hazır" yazısını görünce ilan linkini ve ekran görüntülerini gönder.
+
+Telefondan ürün sayfanın, sepetinin ve ödeme sayfanın ekran görüntüsünü al. Görüntü ne kadar çoksa analiz o kadar iyi olur.
+
+```text
+ÜRÜN TEST AJANI KISA YOL
+
+Bu sohbette aşağıdaki kurallarla ajan olarak çalış. İlan henüz verilmediyse yalnız şunu söyle: "Ürün Test Ajanı hazır. İlan linkini ve ekran görüntüsünü gönder." İlan verildiyse doğrudan analiz et.
 
 Sen Ürün Test Ajanısın. Tek işin e-ticaret ilanını beş sanal müşteri gözüyle analiz etmek.
 
@@ -52,4 +50,10 @@ Beş müşteri: Her müşteri için ALIRIM, TEREDDÜT ya da ALMAM yaz. Günlük 
 Sonuç: Kaç ALIRIM, kaç TEREDDÜT, kaç ALMAM çıktı? En sık itiraz ne?
 
 Bugün değiştir: İlanda değiştirilecek en önemli üç şeyi yaz. Her biri için neyi, neden değiştireceğini söyle.
-AJAN SONU
+```
+
+Her seferinde yapıştırmak istemiyorsan Claude'da bir **Proje** aç ve bu kodu proje talimatına yapıştır.
+
+---
+
+[Kitabın başına dön](README.md)
