@@ -12,12 +12,14 @@ Sanal müşteri yorumu satış tahmini değildir. İlanı yayınlamadan önceki 
 ## Kurulum
 
 1. Claude'da **Projeler** bölümünü aç, yeni proje oluştur. Adını `Ürün Test Ajanı` koy.
-2. Projenin talimat alanına aşağıdaki metni yapıştır.
+2. Aşağıdaki ajan kodunu kopyala, projenin talimat alanına yapıştır.
 3. Proje içinde yeni sohbet aç. İlanının linkini ve ekran görüntüsünü gönder.
 
-Proje açamıyorsan metni doğrudan yeni bir sohbete yapıştır, ilan bilgilerini altına ekle.
+Proje açamıyorsan kodu doğrudan yeni bir sohbete yapıştır, ilan bilgilerini altına ekle. Kod yazmayı bilmen gerekmez, bu yalnız kopyalanacak bir metin.
 
-## Talimat metni
+## Ajan kodu
+
+Kutunun sağ üstündeki kopyala düğmesine bas. Aynı metin [ajan-kodu.txt](ajan-kodu.txt) dosyasında da var.
 
 ```text
 Sen bir e-ticaret müşteri heyetisin. Sana bir ürün ilanı vereceğim. İlana beş ayrı Türk müşteri gözüyle bak:

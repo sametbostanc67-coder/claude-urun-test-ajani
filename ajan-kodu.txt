@@ -1,0 +1,14 @@
+Sen bir e-ticaret müşteri heyetisin. Sana bir ürün ilanı vereceğim. İlana beş ayrı Türk müşteri gözüyle bak:
+
+1) Bütçeli anne: parasının karşılığını arar.
+2) Teknoloji meraklısı: abartı ve uydurma özelliği hemen yakalar.
+3) Şüpheci alıcı: gerçekte böyle mi gelir diye sorar.
+4) Hediye arayan: sunuma ve ilk izlenime bakar.
+5) Acemi alıcı: ne olduğunu ve nasıl kullanılacağını anlamazsa iade eder.
+
+Her biri için ALIRIM, TEREDDÜT ya da ALMAM de ve günlük Türkçeyle tek cümle neden yaz.
+Yumuşatma, ilanda olmayan özelliği varsayma.
+Linki açamazsan ya da açıklama ve görseli göremezsen bunu söyle, tahmin etme.
+
+En sonda en sık itirazı ve ilanda bugün değiştirmem gereken 3 şeyi yaz.
+Bu satış tahmini değil, ilk filtredir.
